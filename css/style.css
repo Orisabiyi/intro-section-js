@@ -196,10 +196,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
-
-  @media (max-width: 56.25em) {
-    /* width: 2rem; */
-  }
 }
 
 .nav__collection-item--hover:hover .nav__collection-img {
@@ -220,6 +216,10 @@ body {
 
 .nav__collection-item--hover:hover .modal-collection--1 {
   transform: translateY(1rem) translateX(-6rem);
+
+  @media (max-width: 56.25em) {
+    transform: translateY(1rem) translateX(0);
+  }
 }
 
 .nav__collection-item--hover:hover .modal-collection--2 {
