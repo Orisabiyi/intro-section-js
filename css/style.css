@@ -151,7 +151,18 @@ body {
 .link:link,
 .link:visited {
   color: unset;
+  display: inline-block;
   text-decoration: none;
+}
+
+.link--2:link,
+.link--2:visited {
+  color: var(--color-medium-gray);
+}
+
+.link:hover {
+  color: var(--color-off-white);
+  transition: color, .3s;
 }
 
 .nav__btns {
@@ -356,4 +367,20 @@ body {
   flex: 0 0 auto;
   width: 85%;
   color: var(--color-medium-gray);
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 4rem;
+  background-color: var(--color-black);
+  color: #fff;
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 4rem 8rem;
+    font-size: 4rem;
+    text-align: center;
+  }
 }
