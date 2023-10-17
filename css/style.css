@@ -53,7 +53,7 @@ body {
 
 .menu {
   @media (max-width: 56.25em) {
-    top: 4rem;
+    top: 3rem;
     right: 4rem;
     z-index: 5;
   }
@@ -332,7 +332,7 @@ body {
 }
 
 .sponsor__img-container img {
-  display: cover;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
