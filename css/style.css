@@ -221,10 +221,14 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 
-  padding: 1rem 2rem;
+  padding: 2.5rem;
   background-color: var(--color-off-white);
   box-shadow: 0 0 2rem rgba(0, 0, 0, .15);
   border-radius: 1rem;
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 5rem;
+  }
 }
 
 .nav__collection-item--hover:hover .modal-collection--1 {
