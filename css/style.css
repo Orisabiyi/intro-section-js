@@ -53,7 +53,7 @@ body {
 
 .menu {
   @media only screen and (max-width: 56.25em) {
-    top: 3rem;
+    top: 5rem;
     right: 4rem;
     z-index: 5;
   }
@@ -110,6 +110,7 @@ body {
   color: var(--color-medium-gray);
 
   @media only screen and (max-width: 56.25em) {
+    padding: 6rem 4rem;
     align-items: flex-start;
     justify-content: flex-start;
   }
@@ -140,12 +141,17 @@ body {
     height: 100%;
     display: flex;
     background-color: white;
-    padding: 10rem 5rem;
+    padding: 16rem 5rem;
   }
 }
 
+
 .nav__collection {
   list-style: none;
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 4rem;
+  }
 }
 
 .link:link,
@@ -209,6 +215,11 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 3rem;
+    gap: 2.5rem;
+  }
 }
 
 .nav__collection-item--hover:hover .nav__collection-img {
@@ -227,7 +238,8 @@ body {
   border-radius: 1rem;
 
   @media only screen and (max-width: 56.25em) {
-    padding: 5rem;
+    padding: 3.5rem;
+    width: 92%;
   }
 }
 
