@@ -22,3 +22,5 @@ menuButton.addEventListener('click', function () {
     navMenu.classList.remove('nav__menu--new');
   }
 })
+
+console.log(window.matchMedia('(max-width: 900px)'));

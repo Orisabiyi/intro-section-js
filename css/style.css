@@ -30,8 +30,8 @@ html {
 
 body {
   position: relative;
-  font-size: 1.8rem;
-  font-family: sans-serif;
+  font-size: 1.6rem;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 500;
   color: var(--color-black);
   line-height: 1.3;
@@ -57,6 +57,17 @@ body {
     right: 4rem;
     z-index: 5;
   }
+
+  @media only screen and (max-width: 20.625em) {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.menu__bar {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .overlay {
@@ -141,7 +152,11 @@ body {
     height: 100%;
     display: flex;
     background-color: white;
-    padding: 16rem 5rem;
+    padding: 16rem 6rem;
+  }
+
+  @media only screen and (max-width: 20.625em) {
+    padding: 12rem 3rem;
   }
 }
 
@@ -151,6 +166,24 @@ body {
 
   @media only screen and (max-width: 56.25em) {
     font-size: 4rem;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+.nav__collection-item {
+  @media only screen and (max-width: 56.25em) {
+    flex: 0 0 auto;
+    height: auto;
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 28.125em) {
+    width: 100%;
   }
 }
 
@@ -239,7 +272,7 @@ body {
 
   @media only screen and (max-width: 56.25em) {
     padding: 3.5rem;
-    width: 92%;
+    width: 100%;
   }
 }
 
@@ -247,12 +280,12 @@ body {
   transform: translateY(1rem) translateX(-6rem);
 
   @media only screen and (max-width: 56.25em) {
-    transform: translateY(1rem) translateX(0);
+    transform: translateY(2rem) translateX(0);
   }
 }
 
 .nav__collection-item--hover:hover .modal-collection--2 {
-  transform: translateY(1rem);
+  transform: translateY(2rem);
 }
 
 .nav__collection-item:hover .link,
